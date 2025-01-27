@@ -1,0 +1,722 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* border: 1px solid black; */
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #ffffff;
+    
+}
+
+
+/* style header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    z-index: 10000;
+    transition: 0.6s;
+}
+.logo{
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    position: relative;
+    transition: 0.6s;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+}
+.logo p{
+    color: rgb(255, 255, 255);
+    margin-top: 14px;
+    font-size: 30px;
+    margin-left: 1px;
+}
+.sticky{
+    padding: 5px 50px;
+    background-color: #faf1f1;
+
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 300;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+header.sticky .logo p{
+    color: #000;
+}
+header.sticky  ul li a {
+    color: #000;
+}
+.sticky a:hover{
+    color: #1042d8;
+    border-bottom: 2px solid #5e5d5d;
+    background-color: #ffffff;
+}
+header a{
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+header a.active,a:hover{
+    background-color: #e4dee4;   
+    color: #4d00c9;
+    transition: .5s;
+}
+.toggle{
+    display: none;
+}
+/* akhir style header */
+
+
+
+
+/* style home */
+.home{
+    background-image: url('../image/wallpaper/paper2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.home-info{
+    width: 50%;
+    padding: 60px;
+}
+.home-info h1{
+    color: #060b52;
+    text-shadow: 2px 3px 4px white;
+    margin-top: 150px;
+}
+.home-info p{
+    color: #ffffff;
+    margin-top: 30px;
+}
+.home-gambar{
+    width: 50%;
+}
+.home-gambar img{
+    width: 500px;
+    margin: 100px 0px 100px 100px;
+}
+.home-info button{
+    border: 1px solid white;
+    color: white;
+    font-size: 14px;
+    background: #1e00c9;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 20%;
+    height: 30px;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+}
+.row {
+    margin: 50px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+.card {
+    box-shadow: 0 19px 20px 0px #202020;
+    background-color: #4d79ff;
+    padding: 16px;
+    height: 30vh;
+    text-align: center;
+    color: white;
+} 
+.card h3{
+    margin-top: 50px;
+}
+.fa{
+      font-size:50px;
+}
+.sown{
+    width: 100%;
+    height: 50vh;
+    background-image: url('../image/wallpaper/image.png');
+    background-size: cover;
+    opacity: 0.8;
+}
+.sown-data{
+    padding: 100px 50px;
+    width: 50%;
+}
+.sown-data h2{
+    color: #1042d8;
+    text-shadow: 1px 2px 1px #000000;
+}
+.sown-data p{
+    color: #ffffff;
+}
+.content-was{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 50px;
+}
+.item{
+    height: auto;
+    text-align: center;
+    padding: 30px;
+}
+.item h2{
+    color: #4d79ff;
+}
+.item img{
+    width: 300px;
+    transition: transform 1s, background-color 3s;
+}
+.item img:hover{
+    transform: scale(0.9);
+}
+
+.showdown{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.showdown h1{
+    margin-top: 100px;
+    font-size: 50px;
+    color: #4d79ff;
+}
+.showdown p{
+    padding: 10px 200px 150px 200px;
+}
+.janton-item-one h3{
+    font-size: 30px;
+    color: #4d79ff;
+}
+.janton-item-one h5{
+    font-size: 20px;
+    color: #5b83f8;
+}
+/* akhir style home */
+
+
+
+
+
+
+
+
+/* style content */
+.content{
+    background-image: url('../image/wallpaper/paper2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.9;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.logolampu{
+    width: 50%;
+}
+.logolampu img{
+    width: 60%;
+    margin: 150px 20px 20px 100px;
+    transition: transform 2s, background-color 3s;
+}
+
+.logolampu img:hover{
+    transform: scale(0.9);
+}
+.keteranga-lampu{
+    width: 50%;
+    margin: 220px 100px 100px 100px;
+    color: #ffffff;
+
+}
+.keteranga-lampu p{
+    font-size: 20px;
+    text-align: left;
+}
+
+
+.dalam-low{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 50px;
+    padding-left: 90px;
+}
+.bungkus{
+    flex-wrap: wrap;
+    width: 30%;
+    margin-right:30px;
+    margin-top: 20px;
+}
+.isinya h2{
+    color: #2366f7;
+    font-size: 14px;
+}
+.isinya p{
+    color: #668cff;
+}
+.container {
+    position: relative;
+    width: auto;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+  
+.image {
+    width: 100%;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.container:hover .image {
+    opacity: 0.3;
+}
+.container:hover .middle {
+    opacity: 1;
+}
+.text {
+    background-color: #1042d8;
+    border-radius: 10%;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+
+
+.materi{
+    width: 100%;
+    height: auto;padding: 50px;
+    background-image: url('../image/wallpaper/paper2.png');
+    padding: 100px;
+}
+.materi h1{
+    padding-top: 100px;
+    color: #f5dede;
+    text-shadow: 1px 2px 1px #000000;
+}
+.materi h2{
+    color: #ffffff;
+}
+.materi li{
+    font-size: 20px;
+}
+.materi p{
+    padding-top: 20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.sharing{
+    width: 50%;
+    display: flex;
+    margin-top: 30px;    
+}
+
+.sharing img{
+    width: 30px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+.sharing a:hover{
+    background: none;
+}
+
+.bagikan{
+    color: #ffffff;
+}
+.bagikan h2{
+    padding-top: 5px;
+}
+.materi li{
+    color: #ffffff;
+    list-style: none;
+    margin-top: 10px;
+}
+/* akhir style isi konten */
+
+
+/* akhir style content */
+
+
+
+
+
+
+/* style galery */
+.galeri{
+    background-image: url('../image/wallpaper/paper2.png');
+    width: 100%;
+    height: auto;
+}
+.galery-sekolah{
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+}
+.galery-sekolah h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: monospace; 
+    padding-top: 130px;
+}
+.conta-gale{
+    display: flex;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+.gallery {
+    margin: 30px;
+    width: 20%;
+    border: 10px outset #ffffff;
+    padding: 20px;
+}
+.gallery a{
+    border: none;
+}
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+.desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+/* akhir style Galery */
+
+
+
+
+
+
+/* style team */
+.team{
+    width: 100%;
+    height: auto;
+    background-image: url('../image/wallpaper/paper2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    text-align: center;
+}
+.team h1{
+   padding-top: 130px;
+   text-shadow: 2px 3px 4px #190bdd;
+}
+.my-team {
+    display: flex;
+    width: 90%;
+    margin-left: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.card12{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+.card12 p{
+    margin-top: 10px;
+}
+.card12 a{
+    color: #ffffff;
+    text-decoration: none;
+}  
+.title {
+    color: #e6ecff;
+    font-size: 18px;
+}
+ 
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #190bdde0;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.contact-se img{
+    margin-top: 20px;
+    width: 20px;
+}
+.contact-se a{
+    background: none;
+}
+.contact-se a:hover{
+    background: none;
+}
+button:hover, a:hover {
+    opacity: 0.8;
+    color: #ffffff;
+    background-color: #000000;
+}
+/* akhir style Team */
+
+
+
+
+
+/* Style footer */
+.awal-footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    color: #ffffff;
+    background-image: url('../image/wallpaper/paper2.png');
+    background-size: cover;
+    opacity: 0.9;
+    padding: 90px;
+}
+.foter1, .foter2, .foter3{
+    width: 30%;
+    height: 50vh;
+    margin-left: 35px;
+}
+.foter2 img{
+    margin-top: 20px;
+    width: 30%;
+    float: left;
+}
+.foter2 p{
+    line-height: 40px;
+    margin-top: 25px;
+}
+.gmbr1, .gmbr2, .gmbr3{
+    display: flex;
+}
+.gmbr1 img, .gmbr2 img, .gmbr3 img{
+    margin-top: 25px;
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    background-color: #2366f7;
+}
+.gmbr1 p, .gmbr2 p, .gmbr3 p{
+    padding-top: 30px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.awal-footer-akhir{
+    background-color: #0c35eb;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+}
+.copi, .kopi2{
+    width: 50%;
+}
+.foter3 h3{
+    color: rgb(104, 105, 104);
+    margin-top: 20px;
+    margin-left: 29px;
+}
+
+.foter1 ul{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+.foter1 ul li{
+    position: relative;
+    list-style: none;
+    margin: 30px 0px 0px 0px;
+}
+.foter1 ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 300;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+.foter1 ul li a:hover{
+    color: black;
+    background: none;
+}
+.icon-bar {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+  }
+  
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 90px;
+    border-radius: 100%;
+}
+.icon-bar img {
+    
+    filter: brightness(0) invert(1);
+    width: 20px;
+}  
+.icon-bar a:hover {
+    background-color: rgba(0, 0, 0, 0.171);
+}
+.facebook {
+    background: #2366f7;
+    color: white;
+}
+.twitter {
+    background: #2366f7;
+    color: white;
+}
+.instagram {
+    background: #2366f7;
+    color: white;
+}
+.maps iframe{
+    margin-top: 20px;
+    width: 90%;
+}
+/* akhir style footer */
+
+
+
+
+
+
+/* style open Bot */
+.open-button {
+    background: none;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+.open-button:hover{
+    background: none;
+}
+.open-button img{
+    width: 100px;
+    margin-left: 180px;
+    transition: transform 2s, background-color 3s;
+}
+.open-button img:hover{
+    transform: scale(1.5);
+}
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+}
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3366ff;
+}
+.form-container img{
+    width: 70px;
+}
+.pesan{
+    display: flex;
+}
+.pesan p{
+    margin: 30px 0px 30px 10px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #99b3ff;
+    resize: none;
+    min-height: 200px;
+}
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.form-container .btn {
+    background-color: #99b3ff;
+    color: #ffffff;
+    padding: 16px 20px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+.form-container .cancel {
+    background-color: #0033cc;
+}
+.form-container .btn:hover {
+    opacity: 1;
+}
+/* akhir style open chat */

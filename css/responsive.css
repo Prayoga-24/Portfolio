@@ -1,0 +1,252 @@
+/* Responsive */
+@media (max-width: 992px){
+    header{
+        padding: 5px 50px;
+        background-color: #faf1f1;
+    }
+    header .logo{
+        color: black;
+    }
+    header ul li a{
+        color: rgb(0, 0, 0);
+
+    }
+    header a.active,a:hover{
+        border: none;
+        transition: none;
+        border-bottom: 2px solid rgba(160, 160, 160, 0.788);
+    }
+    header a{
+        border: none;
+    }
+    header ul{
+        position: absolute;
+        top: 59px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        visibility: hidden;
+        background: rgb(255, 255, 255);
+        opacity: 0;
+    }
+    header.active ul{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+    header.active ul li a{
+        display: inline-block;
+        margin: 15px 0;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .logo p{
+        color: #000;
+        /* padding: 10px; */
+        padding-top: 0px;
+    }
+    .toggle{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .toggle::before{
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 1;
+        box-shadow: 0 10px 0 #000;
+        transition: 0.5s;
+    }
+    .toggle::after{
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 1;
+        transition: 0.5s;
+    }
+    .awal-footer{
+        display: inline-block;
+        /* background: none; */
+    }
+    .foter1, .foter2, .foter3{
+        width: 90%;
+        height: auto;
+        /* background: linear-gradient(57deg, #c5bb00, #ffffff); */
+        padding: 10px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .home{
+        display: inline-block;
+        height: auto;
+    }
+    .home-info{
+        width: auto;
+    }
+    .home-gambar img{
+        display: none;
+    }
+    .content-was{
+        display: inline-block;
+    }
+    .my-team{
+        margin-left: 45px;
+    }
+    .card12{
+        margin-right: 15px;
+    }
+    .awal-footer{
+        display: inline-block;
+        padding-left: 150px;
+    }
+    .content{
+        display: inline-block;
+        height: auto;
+    }
+    .logojabar{
+       width: auto; 
+    }
+    .logojabar img{
+        padding-left: 90px;
+    }
+    .keteranga-jabar{
+        margin-top: 10px;
+        width: auto;
+    }
+    .dalam-low{
+        display: inline-block;
+        width: auto;
+    }
+    .bungkus{
+        width: auto;
+    }
+}
+
+@media (max-width: 425px){
+    .home{
+        width: 100%;
+    }
+    .sown{
+        width: auto;
+        height: auto;
+    }
+    .sown-data{
+        width: auto;
+    }
+    .content-was{
+        width: auto;
+        display: inline;
+    }
+    .item{
+        width: auto;
+        /* display: none; */
+    }
+    .showdown{
+        /* width: 126%; */
+        /* padding: 10px; */
+    }
+    .showdown h1{
+        font-size: 30px;
+    }
+    .showdown p{
+        padding: 10px;
+    }
+    .awal{
+        /* width: 126%; */
+    }
+    .awal-footer{
+        display: inline-block;
+        /* width: 126%; */
+        padding: 12px;
+    }
+    .content{
+        width: 126;
+        padding: 10px;
+        display: inline-block;
+    }
+    .keteranga-lampu{
+        /* margin: 70px; */
+        margin: 20px;
+        width: auto;
+        text-align: left;
+    }
+    .logolampu img{
+        width: 100%;
+        margin-left: 110px;
+    }
+    .image{
+        width: 114%;
+    }
+
+    .dalam-low{ 
+        display: inline-block;
+    }
+    .my-team{
+        display: inline-block;
+        /* padding: 10px; */
+        margin-left: 20px;
+    }
+    .card12{
+        width: auto;
+        margin-bottom: 20px;
+
+    }
+    .conta-gale{
+        display: inline-block;
+    }
+    .gallery{
+        width: auto;
+    }
+    .materi{
+        padding: 10px;
+    }
+}
+@media (max-width: 320px){
+    .logo p{
+        display:  none;
+    }
+    .logo img{
+        width: 70%;
+    }
+    .home-info{
+        padding: 10px;
+    }
+    .home-info h1{
+        padding-top: 1px;
+    }
+    .sown-data{
+        padding: 20px;
+    }
+    .item{
+        width: auto;
+    }
+    .item img{
+        width: 80%;
+    }
+    .foter1{
+        padding-left: 10px;
+    }
+    .dalam-low{
+        padding: 10px;
+    }
+    .bungkus{
+        width: 100%;
+    }
+    .galery-sekolah{
+        padding: 10px;
+    }
+    .conta-gale{
+        width: auto;
+    }
+}
